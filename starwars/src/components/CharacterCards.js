@@ -3,7 +3,7 @@ import CharacterCard from "./CharacterCard";
 
 function CharacterCards(props) {
   return (
-    <div>
+    <div className="character-cards-container">
       {props.characterData.map(data => {
         return <CharacterCard data={data} key={data.name} />;
       })}

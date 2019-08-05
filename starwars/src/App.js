@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
+import "./components/StarWars.scss";
 import CharacterCards from "./components/CharacterCards";
 
 const App = () => {
@@ -27,7 +28,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharacterCards characterData={characterData} />
+      <div className="cards-container">
+        <CharacterCards characterData={characterData} />
+      </div>
     </div>
   );
 };
