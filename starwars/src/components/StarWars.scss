@@ -1,0 +1,28 @@
+.cards-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  .character-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+
+    .character-card {
+      margin: 10px;
+    }
+  }
+}
+
+.ui.button {
+  margin: 10px;
+}
+
+.ui.button.remove-button {
+  display: none;
+}
